@@ -77,6 +77,8 @@ my-profail/
 
 | Project | Live Link |
 |---------|-----------|
+| E-Commerce Store | [View →](https://hamza-leon120.github.io/e-commerce/) |
+| Get In Touch | [View →](https://hamza-leon120.github.io/Get-in-touch/) |
 | column | [View →](https://hamza-leon120.github.io/column/) |
 | WiSchool | [View →](https://hamza-leon120.github.io/WiSchool/) |
 | ROLEX Website | [View →](https://hamza-leon120.github.io/ROLEX-website/) |
