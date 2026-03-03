@@ -88,15 +88,15 @@ html(lang="en")
                     p web developement
                     p HTML PUG CSS SCSS JS
                 .grid-skills 
-                    +skill-two("fa-brands fa-html5","HTML")
-                    .skill
+                    +skill-two("fa-brands fa-html5","HTML",'html')
+                    div(class = "skill PUG")
                         div 
                             img(src="./img/pug.png", alt="")
                         p PUG
                     +skill-two("fa-brands fa-css3-alt","CSS")
                     +skill-two("fa-brands fa-sass","SCSS")
                     +skill-two("fa-brands fa-node-js","JS")
-                    +skill-two("fa-brands fa-react","React")
+                    +skill-two("fa-brands fa-react","REACT")
         section(class = "Works")
             .back
             .container 
@@ -107,12 +107,64 @@ html(lang="en")
                     .arrow.left
                         i(class = "fa-solid fa-angle-left")
                     .slide
-                        +project("./img/Screenshot.png","https://hamza-leon120.github.io/column/")
-                        +project("./img/Screensho-t.png","https://hamza-leon120.github.io/WiSchool/")
-                        +project("./img/Screenshot-light.png","https://hamza-leon120.github.io/ROLEX-website/")
-                        +project("./img/Screenshot.jpg","https://hamza-leon120.github.io/-Velocity-Sportswear-Modern-Sportswear-Landing-Page/")
-                        +project("./img/Screenshot-3.jpg","https://hamza-leon120.github.io/-Digital-Assessor/")
-                        +project("./img/Screenshot-2.jpg","https://hamza-leon120.github.io/TechInnov/")
+                        .print
+                            +project("./img/Screenshotpng.png","https://hamza-leon120.github.io/e-commerce/")
+                            p Powered by
+                            .ski
+                                +skill-two("fa-brands fa-react","REACT")
+                                +skill-two("fa-brands fa-sass","SCSS")
+                        .print
+                            +project("./img/Screenshot (2).png","https://hamza-leon120.github.io/Get-in-touch/")
+                            p Powered by
+                            .ski
+                                +skill-two("fa-brands fa-html5","HTML",'html')
+                                +skill-two("fa-brands fa-sass","SCSS")
+                                +skill-two("fa-brands fa-node-js","JS")
+                        .print
+                            +project("./img/Screenshot.png","https://hamza-leon120.github.io/column/")
+                            p Powered by
+                            .ski
+                                +skill-two("fa-brands fa-react","REACT")
+                                +skill-two("fa-brands fa-sass","SCSS")
+                        .print
+                            +project("./img/Screensho-t.png","https://hamza-leon120.github.io/WiSchool/")
+                            p Powered by
+                            .ski
+                                +skill-two("fa-brands fa-react","REACT")
+                                +skill-two("fa-brands fa-sass","SCSS")
+                        .print
+                            +project("./img/Screenshot-light.png","https://hamza-leon120.github.io/ROLEX-website/")
+                            p Powered by
+                            .ski
+                                div(class = "skill PUG")
+                                    div 
+                                        img(src="./img/pug.png", alt="")
+                                    p PUG
+                                +skill-two("fa-brands fa-sass","SCSS")
+                        .print
+                            +project("./img/Screenshot.jpg","https://hamza-leon120.github.io/-Velocity-Sportswear-Modern-Sportswear-Landing-Page/")
+                            p Powered by
+                            .ski
+                                div(class = "skill PUG")
+                                    div 
+                                        img(src="./img/pug.png", alt="")
+                                    p PUG
+                                +skill-two("fa-brands fa-sass","SCSS")
+                        .print
+                            +project("./img/Screenshot-3.jpg","https://hamza-leon120.github.io/-Digital-Assessor/")
+                            p Powered by
+                            .ski
+                                div(class = "skill PUG")
+                                    div 
+                                        img(src="./img/pug.png", alt="")
+                                    p PUG
+                                +skill-two("fa-brands fa-css3-alt","CSS")
+                        .print
+                            +project("./img/Screenshot-2.jpg","https://hamza-leon120.github.io/TechInnov/")
+                            p Powered by
+                            .ski
+                                +skill-two("fa-brands fa-html5","HTML",'html')
+                                +skill-two("fa-brands fa-css3-alt","CSS")
                     .arrow.right
                         i(class = "fa-solid fa-angle-right")
         section(class = "Contact")

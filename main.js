@@ -25,7 +25,7 @@ ul.forEach(function(ele){
 })
 
 let slide = document.querySelector(".slide")
-let project = document.querySelectorAll(".slide .project")
+let project = document.querySelectorAll(".slide .print")
 let left = document.querySelector(".arrow.left")
 let right = document.querySelector(".arrow.right")
 let num = 0
@@ -103,4 +103,8 @@ up.addEventListener('click',function(){
         top: 0,
         behavior: "smooth",
     })
+})
+
+let ski = document.querySelectorAll(".ski").forEach(function(ele){
+    ele.style.cssText = `grid-template-columns: repeat(${ele.children.length},1fr);`
 })
