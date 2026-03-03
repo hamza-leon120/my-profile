@@ -1,3 +1,5 @@
+@use '../var/var' as *;
+
 @mixin medai ($point) {
     @if $point ==mobail {
         @media (max-width : 767px) {
@@ -39,9 +41,11 @@
 .ele {
     color: #98FAEC;
     font-size: 14px;
+
     &.top {
         margin-bottom: 17px;
     }
+
     &.bottom {
         margin-top: 17px;
     }
@@ -53,12 +57,14 @@
     align-items: center;
     gap: 8px;
     margin-bottom: 40px;
+
     .mouse {
         width: 28px;
         height: 45px;
         border: 2px solid #00e5d4;
         border-radius: 20px;
         position: relative;
+
         .wheel {
             width: 4px;
             height: 10px;
@@ -71,12 +77,14 @@
             animation: wheelMove 1.6s infinite ease-in-out;
         }
     }
+
     .line {
         width: 2px;
         height: 60px;
         border-right: 2px dashed #ccc;
         opacity: 0.8;
     }
+
     .diamond {
         width: 10px;
         height: 10px;
@@ -89,16 +97,19 @@
 .title {
     width: fit-content;
     margin: auto;
+
     p {
         font-size: 64px;
         color: #12F7D6;
     }
+
     div {
         margin-top: 15px;
         position: relative;
         width: 100%;
         height: 1px;
         background-color: #12F7D6;
+
         &::after {
             top: -5px;
             left: -5px;
@@ -109,6 +120,7 @@
             border-radius: 50%;
             background-color: #12F7D6;
         }
+
         &::before {
             top: -5px;
             right: -5px;
@@ -138,4 +150,100 @@
     font-size: 16px;
     color: #FFFFFF;
     text-align: center;
+}
+
+.skill {
+    text-align: center;
+
+    &.HTML{
+        div {
+            background-color: #E54F26;
+        }
+
+        p {
+            color: #E54F26;
+        }
+    }
+
+    &.PUG {
+        div {
+            background-color: #DDC38F;
+        }
+
+        p {
+            color: #DDC38F;
+        }
+    }
+
+    &.CSS {
+        div {
+            background-color: $color-six;
+        }
+
+        p {
+            color: $color-six;
+        }
+    }
+
+    &.SCSS {
+        div {
+            background-color: oklch(59.2% .249 .584);
+        }
+
+        p {
+            color: oklch(59.2% .249 .584);
+        }
+    }
+
+    &.JS {
+        div {
+            background-color: #E7A020;
+        }
+
+        p {
+            color: #E7A020;
+        }
+    }
+
+    &.REACT {
+        div {
+            background-color: #61DAFB;
+        }
+
+        p {
+            color: #61DAFB;
+        }
+    }
+
+    div {
+        width: 114px;
+        height: 114px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px auto;
+
+        @include medai(max-medium) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        i {
+            font-size: 64px;
+            color: $color-three;
+        }
+
+        img {
+            width: 50%;
+            height: 50%;
+        }
+    }
+
+    p {
+        font: {
+            size: 32px;
+            weight: 500;
+        }
+    }
 }

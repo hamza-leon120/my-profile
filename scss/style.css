@@ -139,6 +139,73 @@ body {
   text-align: center;
 }
 
+.skill {
+  text-align: center;
+}
+.skill.HTML div {
+  background-color: #E54F26;
+}
+.skill.HTML p {
+  color: #E54F26;
+}
+.skill.PUG div {
+  background-color: #DDC38F;
+}
+.skill.PUG p {
+  color: #DDC38F;
+}
+.skill.CSS div {
+  background-color: #0C73B8;
+}
+.skill.CSS p {
+  color: #0C73B8;
+}
+.skill.SCSS div {
+  background-color: oklch(59.2% 0.249 0.584deg);
+}
+.skill.SCSS p {
+  color: oklch(59.2% 0.249 0.584deg);
+}
+.skill.JS div {
+  background-color: #E7A020;
+}
+.skill.JS p {
+  color: #E7A020;
+}
+.skill.REACT div {
+  background-color: #61DAFB;
+}
+.skill.REACT p {
+  color: #61DAFB;
+}
+.skill div {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 30px auto;
+}
+@media (max-width: 992px) {
+  .skill div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.skill div i {
+  font-size: 64px;
+  color: #FFFFFF;
+}
+.skill div img {
+  width: 50%;
+  height: 50%;
+}
+.skill p {
+  font-size: 32px;
+  font-weight: 500;
+}
+
 header {
   background-color: #292F36;
   z-index: 1000000000000000000;
@@ -571,72 +638,6 @@ header .container .fa-solid.fa-bars {
     gap: 94px 36px;
   }
 }
-.Skills .container .grid-skills .skill {
-  text-align: center;
-}
-.Skills .container .grid-skills .skill:first-child div {
-  background-color: #E54F26;
-}
-.Skills .container .grid-skills .skill:first-child p {
-  color: #E54F26;
-}
-.Skills .container .grid-skills .skill:nth-child(2) div {
-  background-color: #DDC38F;
-}
-.Skills .container .grid-skills .skill:nth-child(2) p {
-  color: #DDC38F;
-}
-.Skills .container .grid-skills .skill:nth-child(3) div {
-  background-color: #0C73B8;
-}
-.Skills .container .grid-skills .skill:nth-child(3) p {
-  color: #0C73B8;
-}
-.Skills .container .grid-skills .skill:nth-child(4) div {
-  background-color: oklch(59.2% 0.249 0.584deg);
-}
-.Skills .container .grid-skills .skill:nth-child(4) p {
-  color: oklch(59.2% 0.249 0.584deg);
-}
-.Skills .container .grid-skills .skill:nth-child(5) div {
-  background-color: #E7A020;
-}
-.Skills .container .grid-skills .skill:nth-child(5) p {
-  color: #E7A020;
-}
-.Skills .container .grid-skills .skill:nth-child(6) div {
-  background-color: #61DAFB;
-}
-.Skills .container .grid-skills .skill:nth-child(6) p {
-  color: #61DAFB;
-}
-.Skills .container .grid-skills .skill div {
-  width: 114px;
-  height: 114px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 30px auto;
-}
-@media (max-width: 992px) {
-  .Skills .container .grid-skills .skill div {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.Skills .container .grid-skills .skill div i {
-  font-size: 64px;
-  color: #FFFFFF;
-}
-.Skills .container .grid-skills .skill div img {
-  width: 50%;
-  height: 50%;
-}
-.Skills .container .grid-skills .skill p {
-  font-size: 32px;
-  font-weight: 500;
-}
 
 .Works {
   padding: 100px 0px 145px 0px;
@@ -686,7 +687,7 @@ header .container .fa-solid.fa-bars {
 .Works .container .content .slide {
   width: 649px;
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(10, auto);
   overflow: hidden;
 }
 @media (max-width: 992px) {
@@ -699,21 +700,24 @@ header .container .fa-solid.fa-bars {
     width: 297px;
   }
 }
-.Works .container .content .slide .project {
+.Works .container .content .slide .print {
   width: inherit;
-  position: relative;
   transition: 0.5s transform;
 }
-.Works .container .content .slide .project img:first-child {
+.Works .container .content .slide .print .project {
+  width: inherit;
+  position: relative;
+}
+.Works .container .content .slide .print .project img:first-child {
   width: 100%;
 }
-.Works .container .content .slide .project .left {
+.Works .container .content .slide .print .project .left {
   position: absolute;
   left: -4%;
   top: 12%;
   width: 58%;
 }
-.Works .container .content .slide .project .right {
+.Works .container .content .slide .print .project .right {
   position: absolute;
   position: absolute;
   width: 45.2%;
@@ -721,7 +725,7 @@ header .container .fa-solid.fa-bars {
   top: 31%;
   height: 38.6%;
 }
-.Works .container .content .slide .project .link {
+.Works .container .content .slide .print .project .link {
   position: absolute;
   right: 18%;
   top: 14%;
@@ -730,33 +734,33 @@ header .container .fa-solid.fa-bars {
   width: 154px;
 }
 @media (max-width: 992px) {
-  .Works .container .content .slide .project .link {
+  .Works .container .content .slide .print .project .link {
     top: 11%;
     right: 16%;
   }
 }
 @media (max-width: 767px) {
-  .Works .container .content .slide .project .link {
+  .Works .container .content .slide .print .project .link {
     width: 105px;
     height: 25px;
     top: 8%;
     right: 13%;
   }
 }
-.Works .container .content .slide .project .link p {
+.Works .container .content .slide .print .project .link p {
   display: inline-block;
 }
-.Works .container .content .slide .project .link p a {
+.Works .container .content .slide .print .project .link p a {
   text-decoration: none;
   color: #12F7D6;
   font-size: 24px;
 }
 @media (max-width: 767px) {
-  .Works .container .content .slide .project .link p a {
+  .Works .container .content .slide .print .project .link p a {
     font-size: 16px;
   }
 }
-.Works .container .content .slide .project .link i {
+.Works .container .content .slide .print .project .link i {
   color: #12F7D6;
   font-size: 23px;
   position: absolute;
@@ -765,10 +769,36 @@ header .container .fa-solid.fa-bars {
   transform: rotate(-20deg);
 }
 @media (max-width: 767px) {
-  .Works .container .content .slide .project .link i {
+  .Works .container .content .slide .print .project .link i {
     font-size: 18px;
     top: 11px;
     right: -21px;
+  }
+}
+.Works .container .content .slide .print > p {
+  margin: 30px 0 40px 0;
+  font-size: 25px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.Works .container .content .slide .print .ski {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .Works .container .content .slide .print .ski .skill div {
+    width: 90px;
+    height: 90px;
+  }
+  .Works .container .content .slide .print .ski .skill div i {
+    font-size: 50px;
+  }
+  .Works .container .content .slide .print .ski .skill P {
+    font-size: 20px;
   }
 }
 

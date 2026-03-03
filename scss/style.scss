@@ -411,84 +411,6 @@ header {
                 grid-template-rows:  repeat(3,auto);
                 gap: 94px 36px ;
             }
-            .skill {
-                text-align: center;
-                &:first-child {
-                    div {
-                        background-color: #E54F26;
-                    }
-                    p {
-                        color: #E54F26;
-                    }
-                }
-                &:nth-child(2) {
-                    div {
-                        background-color: #DDC38F;
-                    }
-                    p {
-                        color: #DDC38F;
-                    }
-                }
-                &:nth-child(3) {
-                    div {
-                        background-color: $color-six;
-                    }
-                    p {
-                        color: $color-six;
-                    }
-                }
-                &:nth-child(4) {
-                    div {
-                        background-color: oklch(59.2% .249 .584);
-                    }
-                    p {
-                        color: oklch(59.2% .249 .584);
-                    }
-                }
-                &:nth-child(5) {
-                    div {
-                        background-color: #E7A020;
-                    }
-                    p {
-                        color: #E7A020;
-                    }
-                }
-                &:nth-child(6) {
-                    div {
-                        background-color: #61DAFB;
-                    }
-                    p {
-                        color: #61DAFB;
-                    }
-                }
-                div {
-                    width: 114px;
-                    height: 114px;
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0 auto 30px auto;
-                    @include medai(max-medium) {
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-                    i {
-                        font-size: 64px;
-                        color: $color-three;
-                    }
-                    img {
-                        width: 50%;
-                        height: 50%;
-                    }
-                }
-                p {
-                    font: {
-                        size: 32px;
-                        weight: 500;
-                    }
-                }
-            }
         }
     }
 }
@@ -534,7 +456,7 @@ header {
             .slide {
                 width: 649px;
                 display: grid;
-                grid-template-columns: repeat(6,auto);
+                grid-template-columns: repeat(10,auto);
                 overflow: hidden;
                 @include medai(max-medium) {
                     width: 480px;
@@ -542,66 +464,97 @@ header {
                 @include medai(mobail) {
                     width: 297px;
                 }
-                .project {
+                .print {
                     width: inherit;
-                    position: relative;
                     transition: 0.5s transform;
-                    img:first-child {
-                        width: 100%;
-                    }
-                    .left {
-                        position: absolute;
-                        left: -4%;
-                        top: 12%;
-                        width: 58%;
-                    }
-                    .right {
-                        position: absolute;
-                        position: absolute;
-                        width: 45.2%;
-                        right: 7.8%;
-                        top: 31%;
-                        height: 38.6%;
-                    }
-                    .link {
-                        position: absolute;
-                        right: 18%;
-                        top: 14%;
-                        border-bottom: 2px solid $color-three;
-                        height: 36px;
-                        width: 154px;
-                        @include medai (max-medium){
-                            top: 11%;
-                            right: 16%;
+                    .project {
+                        width: inherit;
+                        position: relative;
+                        img:first-child {
+                            width: 100%;
                         }
-                        @include medai (mobail) {
-                            width: 105px;
-                            height: 25px;
-                            top: 8%;
-                            right: 13%;
+                        .left {
+                            position: absolute;
+                            left: -4%;
+                            top: 12%;
+                            width: 58%;
                         }
-                        p {
-                            display: inline-block;
-                            a {
-                                text-decoration: none;
+                        .right {
+                            position: absolute;
+                            position: absolute;
+                            width: 45.2%;
+                            right: 7.8%;
+                            top: 31%;
+                            height: 38.6%;
+                        }
+                        .link {
+                            position: absolute;
+                            right: 18%;
+                            top: 14%;
+                            border-bottom: 2px solid $color-three;
+                            height: 36px;
+                            width: 154px;
+                            @include medai (max-medium){
+                                top: 11%;
+                                right: 16%;
+                            }
+                            @include medai (mobail) {
+                                width: 105px;
+                                height: 25px;
+                                top: 8%;
+                                right: 13%;
+                            }
+                            p {
+                                display: inline-block;
+                                a {
+                                    text-decoration: none;
+                                    color: $color-two;
+                                    font-size: 24px;
+                                    @include medai (mobail){
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                            i {
                                 color: $color-two;
-                                font-size: 24px;
-                                @include medai (mobail){
-                                    font-size: 16px;
+                                font-size: 23px;
+                                position: absolute;
+                                top: 20px;
+                                right: -24px;
+                                transform: rotate(-20deg);
+                                @include medai (mobail) {
+                                    font-size: 18px;
+                                    top: 11px;
+                                    right: -21px;
                                 }
                             }
                         }
-                        i {
-                            color: $color-two;
-                            font-size: 23px;
-                            position: absolute;
-                            top: 20px;
-                            right: -24px;
-                            transform: rotate(-20deg);
+                    }
+                    > p {
+                        margin: 30px 0 40px 0;
+                        font-size: 25px;
+                        color: #FFFFFF;
+                        text-align: center;
+                    }
+                    .ski {
+                        width: 100%;
+                        margin: auto;
+                        display: grid;
+                        grid-template-columns: repeat(3,1fr);
+                        justify-content: center;
+                        gap: 10px;
+                        .skill {
                             @include medai (mobail) {
-                                font-size: 18px;
-                                top: 11px;
-                                right: -21px;
+                                div {
+                                    width: 90px;
+                                    height: 90px;
+                                    i {
+                                        font-size: 50px;
+                                    }
+                                }
+                                P {
+                                    font-size: 20px;
+                                }
                             }
                         }
                     }
