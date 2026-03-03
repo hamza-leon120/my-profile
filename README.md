@@ -11,7 +11,7 @@
 ## 📸 Screenshots
 
 ### 🖥️ Desktop Preview
-![Desktop Preview](/img/Screenshot.png)
+![Desktop Preview](/img/proScreenshot.png)
 
 ### 📱 Mobile View  
 ![Mobile Preview](img/mobail-Screenshot.png)
