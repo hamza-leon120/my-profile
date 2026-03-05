@@ -8,6 +8,12 @@
 
 ---
 
+## 🚀 Live Demo
+
+👉 [https://hamza-leon120.github.io/my-profail/](https://hamza-leon120.github.io/my-profail/)
+
+---
+
 ## 📸 Screenshots
 
 ### 🖥️ Desktop Preview
@@ -22,11 +28,6 @@
 
 This is my personal portfolio website where I showcase my skills, projects, and experience as a **Front-End Developer** based in Algeria. I built it from scratch to demonstrate my ability to write clean, organized, and maintainable code while creating an engaging and visually appealing user experience.
 
----
-
-## 🚀 Live Demo
-
-👉 [https://hamza-leon120.github.io/my-profail/](https://hamza-leon120.github.io/my-profail/)
 
 ---
 
