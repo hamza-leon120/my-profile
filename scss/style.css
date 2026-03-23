@@ -178,6 +178,12 @@ body {
 .skill.REACT p {
   color: #61DAFB;
 }
+.skill.GIT div {
+  background-color: #F05032;
+}
+.skill.GIT p {
+  color: #F05032;
+}
 .skill div {
   width: 114px;
   height: 114px;
