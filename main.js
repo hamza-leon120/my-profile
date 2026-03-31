@@ -53,11 +53,9 @@ left.addEventListener('click',function(){
         })
 })
 
-let linkedin = document.querySelectorAll('.fa-linkedin-in')
-linkedin.forEach(function(ele){
-    ele.addEventListener('click',function (){
-        window.open("https://www.linkedin.com/in/hamza-aymen/")
-    })
+let linkedin = document.querySelector('.linkedin')
+linkedin.addEventListener('click',function (){
+    window.open("https://www.linkedin.com/in/hamza-aymen/")
 })
 let github = document.querySelector(".fa-brands.fa-github")
 github.addEventListener("click",function(){
