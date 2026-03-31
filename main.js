@@ -2,7 +2,7 @@ let ber = document.querySelector('.fa-solid.fa-bars')
 let nav = document.querySelector("nav")
 ber.addEventListener("click",function(){
     if(window.getComputedStyle(nav).height === "0px"){
-        nav.style.cssText = "height: 365px;"
+        nav.style.cssText = "height: 415px;"
     }else {
         nav.style.cssText = "height: 0px;"
     }
@@ -53,10 +53,10 @@ left.addEventListener('click',function(){
         })
 })
 
-let facebook = document.querySelectorAll('.facebook')
-facebook.forEach(function(ele){
+let linkedin = document.querySelectorAll('.fa-linkedin-in')
+linkedin.forEach(function(ele){
     ele.addEventListener('click',function (){
-        window.open("https://www.facebook.com/profile.php?id=61584760172770")
+        window.open("https://www.linkedin.com/in/hamza-aymen/")
     })
 })
 let github = document.querySelector(".fa-brands.fa-github")
@@ -66,15 +66,13 @@ github.addEventListener("click",function(){
 let email = document.querySelectorAll(".email")
 email.forEach(function(ele){
     ele.addEventListener("click",function(){
-        // window.open("mailto:haaymen20@gmail.com","_blank")
         window.location.href = "mailto:haymen20@gmail.com";
     })
 })
 let instagram = document.querySelectorAll(".instagram")
 instagram.forEach(function(ele){
     ele.addEventListener("click",function(){
-        window.location.href = "https://www.instagram.com/hmzdeveloper/"
-        // window.open("https://www.instagram.com/hmzdeveloper/")
+        window.open("https://www.instagram.com/hmzdeveloper/")
     })
 })
 
@@ -107,4 +105,15 @@ up.addEventListener('click',function(){
 
 let ski = document.querySelectorAll(".ski").forEach(function(ele){
     ele.style.cssText = `grid-template-columns: repeat(${ele.children.length},1fr);`
+})
+
+let responsiveWebDesign = document.querySelector(".responsive-web-design ")
+let JavaScript = document.querySelector(".JavaScript")
+
+responsiveWebDesign.addEventListener("click",function(){
+    window.open("https://www.freecodecamp.org/certification/fcc-c23ca8a6-df7b-4e4a-ae5c-ee37a748ed24/responsive-web-design-v9")
+})
+
+JavaScript.addEventListener("click",function(){
+    window.open("https://www.freecodecamp.org/certification/fcc-c23ca8a6-df7b-4e4a-ae5c-ee37a748ed24/javascript-v9")
 })

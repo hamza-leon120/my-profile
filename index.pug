@@ -27,10 +27,11 @@ html(lang="en")
                         li About me
                         li Skills
                         li Works
+                        li certificates 
                         li Contact
                     ul 
                         li: i(class = "fa-brands fa-github")
-                        li: i(class = "fa-brands fa-facebook facebook")
+                        li: i(class = "fa-brands fa-linkedin-in")
                         li: i(class = "fa-brands fa-instagram instagram")
                 i(class = "fa-solid fa-bars")
         section(class = "Home")
@@ -169,6 +170,18 @@ html(lang="en")
                                 +skill-two("fa-brands fa-css3-alt","CSS")
                     .arrow.right
                         i(class = "fa-solid fa-angle-right")
+        section(class = "certificates")
+            .container 
+                +start()
+                +title("certificates")
+                p(class = "p-title") Proudly displaying the milestones of my developer journey
+                .print 
+                    .responsive-web-design 
+                        img(src="./img/Responsive-Web-Design-Certification.png", alt="")
+                        p Responsive Web Design Certification
+                    .JavaScript 
+                        img(src="./img/JavaScript-Certification.png", alt="")
+                        p JavaScript Certification
         section(class = "Contact")
             .container 
                 +start()
@@ -178,7 +191,7 @@ html(lang="en")
                     p Send me a message
                 .socials
                     +social("fa-regular fa-envelope","email")
-                    +social("fa-brands fa-facebook","facebook")
+                    +social("fa-brands fa-linkedin-in","linkedin")
                     +social("fa-brands fa-instagram","instagram")
         .up 
             i(class = "fa-solid fa-up-long")
