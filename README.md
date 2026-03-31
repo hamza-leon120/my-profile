@@ -10,7 +10,7 @@
 
 ## 🚀 Live Demo
 
-👉 [(https://hamza-leon120.github.io/my-profile/](https://hamza-leon120.github.io/my-profile/)
+👉 [https://hamza-leon120.github.io/my-profile/](https://hamza-leon120.github.io/my-profile/)
 
 ---
 
