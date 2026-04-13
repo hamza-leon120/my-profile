@@ -1,5 +1,18 @@
-let ber = document.querySelector('.fa-solid.fa-bars')
-let nav = document.querySelector("nav")
+const sections = document.querySelectorAll("section .container")
+const observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry ){
+        if(entry.isIntersecting){
+            entry.target.style.opacity = 1
+        }
+    })
+},{
+    threshold: 0.25
+})
+sections.forEach(function(section){
+    observer.observe(section)
+})
+const ber = document.querySelector('.fa-solid.fa-bars')
+const nav = document.querySelector("nav")
 ber.addEventListener("click",function(){
     if(window.getComputedStyle(nav).height === "0px"){
         nav.style.cssText = "height: 415px;"
@@ -8,7 +21,7 @@ ber.addEventListener("click",function(){
     }
 })
 
-let ul = document.querySelectorAll("ul li")
+const ul = document.querySelectorAll("ul li")
 ul.forEach(function(ele){
     ele.addEventListener('click',function(){
         let section
@@ -24,10 +37,10 @@ ul.forEach(function(ele){
     })
 })
 
-let slide = document.querySelector(".slide")
-let project = document.querySelectorAll(".slide .print")
-let left = document.querySelector(".arrow.left")
-let right = document.querySelector(".arrow.right")
+const slide = document.querySelector(".slide")
+const project = document.querySelectorAll(".slide .print")
+const left = document.querySelector(".arrow.left")
+const right = document.querySelector(".arrow.right")
 let num = 0
 right.addEventListener("click",function(){
     num++
@@ -53,17 +66,17 @@ left.addEventListener('click',function(){
         })
 })
 
-let linkedin = document.querySelectorAll('.linkedin')
+const linkedin = document.querySelectorAll('.linkedin')
 linkedin.forEach(function(ele){
     ele.addEventListener('click',function (){
         window.open("https://www.linkedin.com/in/hamza-aymen/")
     })
 })
-let github = document.querySelector(".fa-brands.fa-github")
+const github = document.querySelector(".fa-brands.fa-github")
 github.addEventListener("click",function(){
     window.open("https://github.com/hamza-leon120")
 })
-let email = document.querySelectorAll(".email")
+const email = document.querySelectorAll(".email")
 email.forEach(function(ele){
     ele.addEventListener("click",function(){
         window.location.href = "mailto:haymen20@gmail.com";
@@ -76,9 +89,9 @@ instagram.forEach(function(ele){
     })
 })
 
-let up = document.querySelector(".up")
-let header = document.querySelector("header")
-let headerC = document.querySelector("header .container")
+const up = document.querySelector(".up")
+const header = document.querySelector("header")
+const headerC = document.querySelector("header .container")
 window.addEventListener("scroll",function(){
     if(window.getComputedStyle(nav).height !== "0px") {
         nav.style.cssText = "height: 0px;"
@@ -91,9 +104,9 @@ window.addEventListener("scroll",function(){
         headerC.style.cssText = "1px solid #43454D;"
     }
     if(this.scrollY > 300) {
-        up.style.cssText = "position: fixed;"
+        up.style.opacity = 1
     }else {
-        up.style.cssText = "display: none;"
+        up.style.opacity = 0
     }
 })
 up.addEventListener('click',function(){
@@ -103,12 +116,13 @@ up.addEventListener('click',function(){
     })
 })
 
-let ski = document.querySelectorAll(".ski").forEach(function(ele){
+const ski = document.querySelectorAll(".ski")
+ski.forEach(function(ele){
     ele.style.cssText = `grid-template-columns: repeat(${ele.children.length},1fr);`
 })
 
-let responsiveWebDesign = document.querySelector(".responsive-web-design ")
-let JavaScript = document.querySelector(".JavaScript")
+const responsiveWebDesign = document.querySelector(".responsive-web-design ")
+const JavaScript = document.querySelector(".JavaScript")
 
 responsiveWebDesign.addEventListener("click",function(){
     window.open("https://www.freecodecamp.org/certification/fcc-c23ca8a6-df7b-4e4a-ae5c-ee37a748ed24/responsive-web-design-v9")

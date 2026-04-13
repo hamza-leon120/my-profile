@@ -25,10 +25,10 @@ header {
                     size: 32px;
                     weight: 500;
                 }
-                @include medai(max-medium) {
+                @include media(max-medium) {
                     font-size: 24px;
                 }
-                @include medai(mobail) {
+                @include media(mobail) {
                     font-size: 18px;
                 }
             }
@@ -38,7 +38,7 @@ header {
             justify-content: space-between;
             align-items: center;
             width: 73%;
-            @include medai(mobail) {
+            @include media(mobail) {
                 position: absolute;
                 left: 0px;
                 top: 95px;
@@ -53,11 +53,11 @@ header {
             }
             ul {
                 list-style: none;
-                @include medai(mobail) {
+                @include media(mobail) {
                     width: 100%;
                 }
                 li {
-                    margin-right: 20px;
+                    margin-right: 15px;
                     display: inline-block;
                     font-size: 24px;
                     color: $color-three;
@@ -65,17 +65,16 @@ header {
                     &:hover {
                         color: $color-two;
                     }
-                    @include medai(max-large) {
+                    @include media(max-large) {
                         font-size: 20px;
                     }
-                    @include medai(max-medium) {
-                        margin-right: 15px;
-                        font-size: 15px;
+                    @include media(max-medium) {
+                        font-size: 14px;
                     }
                 }
                 &:first-child {
                     li {
-                        @include medai(mobail) {
+                        @include media(mobail) {
                             display: block;
                             width: 100%;
                             display: flex;
@@ -87,14 +86,14 @@ header {
                     }
                 }
                 &:nth-child(2) {
-                    @include medai (mobail) {
+                    @include media (mobail) {
                         text-align: center;
                         margin-bottom: 25px;
                     }
                     li {
                         i {
                             color: $color-two;
-                            @include medai (mobail) {
+                            @include media (mobail) {
                                 font-size: 33px;
                             }
                         }
@@ -104,7 +103,7 @@ header {
         }
         .fa-solid.fa-bars {
             display: none;
-            @include medai(mobail) {
+            @include media(mobail) {
                 display: block;
                 font-size: 20px;
                 color: $color-two;
@@ -124,7 +123,7 @@ header {
                 font-size: 117px;
                 color: $color-five;
                 margin-bottom: 72px;
-                @include medai(mobail) {
+                @include media(mobail) {
                     font-size: 70px;
                 }
             }
@@ -203,18 +202,18 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            @include medai(max-medium) {
+            @include media(max-medium) {
                 flex-direction: column;
             }
             .left {
-                @include medai(max-medium) {
+                @include media(max-medium) {
                     margin-bottom: 62px;
                 }
                 h1 {
                     margin: 0;
                     font-size: 64px;
                     color: $color-three;
-                    @include medai(mobail) {
+                    @include media(mobail) {
                         font-size: 32px;
                     }
                     span {
@@ -294,13 +293,13 @@ header {
 .About-me {
     background-image: url(../img/About-me.jpg);
     padding: 100px 0px 90px 0px ;
-    @include medai(mobail) {
+    @include media(mobail) {
         padding: 64px 0px 64px 0px;
     }
     .container {
         .scroll-indicator {
             margin-bottom: 100px;
-            @include medai(mobail) {
+            @include media(mobail) {
                 margin-bottom: 60px;
             }
         }
@@ -314,7 +313,7 @@ header {
             justify-content: center;
             align-items: center;
             margin-bottom: 58px;
-            @include medai(mobail) {
+            @include media(mobail) {
                 width: 224px;
                 height: 68px;
                 margin: 0 auto 32px auto;
@@ -322,7 +321,7 @@ header {
             p {
                 font-size: 64px;
                 color: $color-three;
-                @include medai(mobail) {
+                @include media(mobail) {
                     font-size: 32px;
                 }
             }
@@ -357,7 +356,7 @@ header {
             background-image: url(../img/Image.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            @include medai(mobail) {
+            @include media(mobail) {
                 margin: 63px auto 0 auto;
                 width: 272px;
                 height: 364px;
@@ -370,7 +369,7 @@ header {
     padding: 115px 0 115px 0;
     position: relative;
     background-image: url(../img/Skills.jpg);
-    @include medai(max-medium) {
+    @include media(max-medium) {
         padding: 62px 0 62px 0;
     }
     .container {
@@ -405,8 +404,8 @@ header {
             display: grid;
             grid-template-columns: repeat(5,auto);
             grid-template-rows: auto;
-            gap: 100px;
-            @include medai(max-medium) {
+            gap: 90px;
+            @include media(max-medium) {
                 grid-template-columns: repeat(2,auto);
                 grid-template-rows:  repeat(3,auto);
                 gap: 94px 36px ;
@@ -441,14 +440,14 @@ header {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                @include medai(mobail){
+                @include media(mobail){
                     width: 36px;
                     height: 36px;
                 }
                 i {
                     color: $color-three;
                     font-size: 40px;
-                    @include medai(mobail) {
+                    @include media(mobail) {
                         font-size: 20px;
                     }
                 }
@@ -458,10 +457,10 @@ header {
                 display: grid;
                 grid-template-columns: repeat(10,auto);
                 overflow: hidden;
-                @include medai(max-medium) {
+                @include media(max-medium) {
                     width: 480px;
                 }
-                @include medai(mobail) {
+                @include media(mobail) {
                     width: 297px;
                 }
                 .print {
@@ -494,11 +493,11 @@ header {
                             border-bottom: 2px solid $color-three;
                             height: 36px;
                             width: 154px;
-                            @include medai (max-medium){
+                            @include media (max-medium){
                                 top: 11%;
                                 right: 16%;
                             }
-                            @include medai (mobail) {
+                            @include media (mobail) {
                                 width: 105px;
                                 height: 25px;
                                 top: 8%;
@@ -510,7 +509,7 @@ header {
                                     text-decoration: none;
                                     color: $color-two;
                                     font-size: 24px;
-                                    @include medai (mobail){
+                                    @include media (mobail){
                                         font-size: 16px;
                                     }
                                 }
@@ -522,7 +521,7 @@ header {
                                 top: 20px;
                                 right: -24px;
                                 transform: rotate(-20deg);
-                                @include medai (mobail) {
+                                @include media (mobail) {
                                     font-size: 18px;
                                     top: 11px;
                                     right: -21px;
@@ -544,7 +543,7 @@ header {
                         justify-content: center;
                         gap: 10px;
                         .skill {
-                            @include medai (mobail) {
+                            @include media (mobail) {
                                 div {
                                     width: 90px;
                                     height: 90px;
@@ -567,7 +566,7 @@ header {
 .certificates {
     background-image: url(../img/About-me.jpg);
     padding: 100px 0px 100px 0px ;
-    @include medai(mobail) {
+    @include media(mobail) {
         padding: 64px 0px 80px 0px;
     }
     .print {
@@ -575,7 +574,7 @@ header {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 1fr;
         gap: 20px;
-        @include medai(max-medium) {
+        @include media(max-medium) {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2,400px);
             gap: 100px;
@@ -608,7 +607,7 @@ header {
         align-items: center;
         border-radius: 32px 0px 32px 0px;
         border: 2px solid $color-two;
-        @include medai(mobail){
+        @include media(mobail){
             width: 325px;
             height: 64px;
         }
@@ -621,7 +620,7 @@ header {
         margin-top: 40px;
         display: flex;
         justify-content: space-around;
-        @include medai(mobail) {
+        @include media(mobail) {
             flex-direction: column;
             align-items: center;
             
@@ -635,7 +634,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-            @include medai(mobail) {
+            @include media(mobail) {
                 margin-bottom: 25px;
             }
             p {
@@ -652,7 +651,7 @@ header {
 }
 
 .up {
-    display: none;
+    position: fixed;
     width: 40px;
     height: 40px;
     border-radius: 12px;
@@ -665,4 +664,6 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.6s ease ;
 }

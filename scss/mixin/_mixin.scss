@@ -1,6 +1,6 @@
 @use '../var/var' as *;
 
-@mixin medai ($point) {
+@mixin media ($point) {
     @if $point ==mobail {
         @media (max-width : 767px) {
             @content;
@@ -36,6 +36,11 @@
             @content;
         }
     }
+}
+
+section .container {
+    opacity: 0;
+    transition: opacity 0.8s ease ;
 }
 
 .ele {
@@ -185,6 +190,16 @@
         }
     }
 
+    &.TAILWIND {
+        div {
+            background-color: #06B6D4;
+        }
+
+        p {
+            color: #06B6D4;
+        }
+    }
+
     &.SCSS {
         div {
             background-color: oklch(59.2% .249 .584);
@@ -234,7 +249,7 @@
         align-items: center;
         margin: 0 auto 30px auto;
 
-        @include medai(max-medium) {
+        @include media(max-medium) {
             margin-left: auto;
             margin-right: auto;
         }
