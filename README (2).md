@@ -8,6 +8,16 @@
 
 ---
 
+## 📸 Screenshots
+
+### 🖥️ Desktop Preview
+![Desktop Preview](/img/proScreenshot.png)
+
+### 📱 Mobile View  
+![Mobile Preview](img/mobail-Screenshot.png)
+
+---
+
 ## 🚀 Live Demo
 
 👉 **[hamza-leon120.github.io/my-profile](https://hamza-leon120.github.io/my-profile/)**
