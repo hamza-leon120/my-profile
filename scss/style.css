@@ -346,7 +346,12 @@ header .container .fa-solid.fa-bars {
 
 .Home {
   background-color: #292F36;
-  padding: 71px 0px 121px 0px;
+  padding: 71px 0px 100px 0px;
+}
+@media (max-width: 767px) {
+  .Home {
+    padding: 64px 0px 64px 0px;
+  }
 }
 .Home .container .dev {
   text-align: center;
@@ -429,16 +434,6 @@ header .container .fa-solid.fa-bars {
   color: #292F36;
   font-size: 14px;
 }
-.Home .container .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-@media (max-width: 992px) {
-  .Home .container .content {
-    flex-direction: column;
-  }
-}
 @media (max-width: 992px) {
   .Home .container .content .left {
     margin-bottom: 62px;
@@ -495,30 +490,6 @@ header .container .fa-solid.fa-bars {
 .Home .container .content .left .talk div i {
   font-size: 24px;
   color: #12F7D6;
-}
-.Home .container .content .right {
-  padding: 58px 30px;
-  width: 215px;
-  height: 378px;
-  border-radius: 80px;
-  background-color: #1A1E23;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.Home .container .content .right div {
-  display: flex;
-  align-items: center;
-}
-.Home .container .content .right div p:nth-child(1) {
-  color: #12F7D6;
-  font-size: 48px;
-  font-weight: 500;
-  margin-right: 19px;
-}
-.Home .container .content .right div p:nth-child(2) {
-  color: #FFFFFF;
-  font-size: 16px;
 }
 
 .About-me {
@@ -624,22 +595,26 @@ header .container .fa-solid.fa-bars {
   justify-content: space-between;
   margin: auto;
   width: 296px;
-  height: 132px;
+  height: 145px;
   background-color: #98FAEC;
   border-left: 8px solid #0C73B8;
   border-radius: 8px;
   margin-bottom: 90px;
+  text-align: center;
 }
 .Skills .container .field i {
   font-size: 32px;
   color: #292F36;
+  margin-bottom: 10px;
 }
 .Skills .container .field p {
   font-size: 24px;
   color: #292F36;
 }
 .Skills .container .field p:nth-child(3) {
+  line-height: 20px;
   font-size: 14px;
+  margin: 5px 0;
 }
 .Skills .container .grid-skills {
   display: grid;

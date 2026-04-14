@@ -115,7 +115,10 @@ header {
 
 .Home {
     background-color: $color-one;
-    padding: 71px 0px 121px 0px ;
+    padding: 71px 0px 100px 0px ;
+    @include media (mobail) {
+        padding: 64px 0px 64px 0px;
+    }
     .container {
         .dev {
             text-align: center;
@@ -199,12 +202,6 @@ header {
             }
         }
         .content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            @include media(max-medium) {
-                flex-direction: column;
-            }
             .left {
                 @include media(max-medium) {
                     margin-bottom: 62px;
@@ -257,32 +254,6 @@ header {
                             font-size: 24px;
                             color: $color-two;
                         }
-                    }
-                }
-            }
-            .right {
-                padding: 58px 30px;
-                width: 215px;
-                height: 378px;
-                border-radius: 80px;
-                background-color: $color-four;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                div {
-                    display: flex;
-                    align-items: center;
-                    p:nth-child(1) {
-                        color: $color-two;
-                        font: {
-                            size: 48px;
-                            weight: 500;
-                        }
-                        margin-right: 19px;
-                    }
-                    p:nth-child(2) {
-                        color: $color-three;
-                        font-size: 16px;
                     }
                 }
             }
@@ -383,21 +354,25 @@ header {
             justify-content: space-between;
             margin: auto;
             width: 296px ;
-            height: 132px;
+            height: 145px;
             background-color: $color-five;
             border-left: 8px solid $color-six;
             border-radius: 8px;
             margin-bottom: 90px;
+            text-align: center;
             i {
                 font-size: 32px;
                 color: $color-one;
+                margin-bottom: 10px;
             }
             p {
                 font-size: 24px;
                 color: $color-one;
             }
             p:nth-child(3) {
+                line-height: 20px;
                 font-size: 14px;
+                margin: 5px 0;
             }
         }
         .grid-skills {
