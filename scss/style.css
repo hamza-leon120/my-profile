@@ -734,7 +734,7 @@ header .container .fa-solid.fa-bars {
   width: 58%;
 }
 .Works .container .content .slide .print .project .right {
-  position: absolute;
+  cursor: pointer;
   position: absolute;
   width: 45.2%;
   right: 7.8%;
@@ -930,4 +930,91 @@ header .container .fa-solid.fa-bars {
   cursor: pointer;
   opacity: 0;
   transition: opacity 0.6s ease;
+}
+
+.percentage {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  z-index: 100000000;
+  background-image: conic-gradient(#12F7D6 0%, white 0%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.percentage div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10000000000000000000;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 0.3s ease;
+}
+.show-img::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+.show-img img {
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 70%;
+}
+@media (max-width: 767px) {
+  .show-img img {
+    width: 85%;
+    height: 50%;
+  }
+}
+.show-img i {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  left: 97%;
+  top: 12%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .show-img i {
+    left: 94%;
+    top: 22%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
